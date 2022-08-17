@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+		<!-- 
+			Atividade: criar agenda telefônica
+			> requisitos:
+				. listas ordenadas e não ordenadas;
+				. tabelas;
+				. titulos, parágrafos, quebras de linha;
+				. divisão em segmentos DIV, SECTION;
+				. links entre as páginas;
+				. imagens;
+				. formulário com
+					 nome, 
+					 sobrenome, 
+					 telefone, 
+					 e-mail, 
+					 data de nascimento, 
+					 idade, 
+					 marcar se é parente ou não,
+					 seleção da origem do contato
+					 	- escola
+					 	- trabalho
+					 	- night
+					 foto do contato,
+					 sexo e
+					 rede social.
+			> individual.		
+		 -->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>::: Agenda TOP :::</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body> <hr><hr>
+		 <nav>
+		 	<ul>
+			 	<table>
+			 		<tr>
+			 			<td> <li> <a href="http://lattes.cnpq.br/2429774829378811">   |   Curriculo Lattes   |   </a> </li></td>
+			 			<td><li> <a href="mailto:kalil.fadesc@gmail.com">   |   Gmail   |   </a></li></td>
+			 			<td><li> <a href="https://www.github.com/kalil-ifc">   |   Portifólio   |   </a> </li></td>
+			 		</tr>
+			 	</table>		 	
+			</ul>
+		 </nav> <hr> <hr>
+		 <section>
+		 	<div class="titulo">
+		 		<h1>BEM-VINDO À AGENDA TOP DE CONTATOS DIVERSOS</h1>
+		 	</div>
+		 	<div class="paragrafo">
+		 		<h2>INTRUÇÕES SOBRE O SISTEMA</h2>
+		 		<p>
+		 			A <strong>AGENDA TOP</strong> foi desenvolvida para ser fácil de usar. Você só precisa preencher os campos solicitados e clicar no botão de enviar ao final do processo.
+		 		</p>
+		 		<p>
+		 			Para saber um pouco mais sobre quem criou este sistema, oferecemos no banner ao topo desta página<br> alguns links para acessar um curriculo lattes, a conta de e-mail oficial e ainda um portifólio do GitHub com o código fonte deste trabalho.
+		 		</p>
+		 		<p>
+		 			Clique na imagem abaixo para iniciar. Nosso muito obrigado!
+		 		</p>
+		 	</div>
+		 	<div class="iniciar">
+		 		<a href="#aqui">
+		 			<img 
+		 				src="https://img2.gratispng.com/20180711/clw/kisspng-button-3d-computer-graphics-follow-button-5b46d0d143cba9.4960147515313676332777.jpg"
+		 				alt="Botão iniciar"
+		 			/>
+		 		</a>
+		 	</div>
+		 	<br>	
+		 	<hr><hr>
+		 	<br>	 	
+		 	<div class=formulario>
+		 	<form action="#">
+		 		<!-- Entrada nome -->
+		 			<ul id="aqui">		 			
+		 				<label for="nome">Nome</label>
+			 			<input type="text" id="nome">
+			 		</ul>	
+		 		
+		 		<!-- Entrada Sobrenome -->
+		 			<ul>	
+		 				<label for="sobrenome">Sobrenome</label>
+		 				<input type="text" id="sobrenome">
+			 		</ul>
+		 		
+		 		<!-- Entrada Telefone -->
+		 			<ul>
+		 				<label for="telefone">Telefone</label>
+		 				<input type="tel" id="telefone">
+			 		</ul>
+ 		
+		 		<!-- Entrada Email -->
+		 			<ul>
+		 				<label for="email">E-mail</label>
+		 				<input type="email" id="email">
+			 		</ul>
+		 			
+		 		<!-- Entrada Data de Nascimento -->
+		 			<ul>
+		 				<label for="datanascimento">Data de Nascimento</label>
+		 				<input type="date" id="datanascimento">
+			 		</ul>
+			 		
+		 		<!-- Entrada Idade -->
+		 			<ul>
+		 				<label for="idade">Idade</label>
+		 				<input type="number" id="idade">
+			 		</ul>
+		 		
+		 		<!-- Entrada Parentesco -->
+		 			<ul>
+		 				<label for="parente">Marcar se é parente</label>
+		 				<input type="checkbox" id="parente">
+			 		</ul>
+		 		
+		 		<!-- Entrada Origem do contato -->
+		 			<ul>
+		 				<label for="origem">Origem do contato</label>
+		 				<select>
+		 					<option value="trabalho">Trabalho</option>
+		 					<option value="faculdade">Faculdade</option>
+		 					<option value="balada">Balada</option>
+		 					<option value="igreja">Igreja</option>
+		 					<option value="outro">Outro</option>
+		 				</select>
+			 		</ul>
+			 		
+			 	<!-- Entrada Sexo -->
+		 			<ul>
+		 				<label for="sexo">Sexo</label>
+		 				<select>
+		 					<option value="masculino">Masculino</option>
+		 					<option value="feminino">Feminino</option>
+		 					<option value="nao-respondeu">Não responder</option>
+		 				</select>
+			 		</ul>
+			 		
+			 	<!-- Entrada Rede Social -->
+		 			<ul>	
+		 				<label for="redesocial">Rede Social</label>
+		 				<input type="text" id="redesocial">
+			 		</ul>
+			 	
+			 	<!-- Entrada Rede Social -->
+		 			<ul>	
+		 				<label for="foto">Selecione uma foto para enviar</label>
+		 				<input type="file" id="foto">
+			 		</ul>
+			 	
+		 		
+		 		<button>ENVIAR</button>
+		 		
+		 		</div>
+		 	</form>
+		 </section>
+		 <hr><hr>
+		 <footer>
+		 
+		 	<p> Kalil de Oliveira &copy; 2022 </p>
+		 </footer>
+	</body>
+</html>
